@@ -7,12 +7,24 @@
   import Header from "$lib/Header.svelte";
   import { inject } from "@vercel/analytics";
   import { env as dynamicEnv } from "$env/dynamic/public";
-  // import { PUBLIC_BASE_URL } from "$env/static/public";
+  import { browser } from "$app/environment";
+  import { webVitals } from "$lib/vitals";
+  import { page } from "$app/stores";
   console.log(import.meta.env.VERCEL_ANALYTICS_ID);
   console.log(dynamicEnv);
   console.log(import.meta.env);
-  // console.log(staticenv);
+
   inject();
+
+  let analyticsId = import.meta.env.VERCEL_ANALYTICS_ID;
+
+  $: if (browser && analyticsId) {
+    webVitals({
+      path: $page.url.pathname,
+      params: $page.params,
+      analyticsId,
+    });
+  }
 </script>
 
 <!-- App Shell -->
