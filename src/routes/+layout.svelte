@@ -1,5 +1,4 @@
 <script>
-  // import "@skeletonlabs/skeleton/themes/theme-skeleton.css";
   import "$lib/theme-luke.css";
   import "@skeletonlabs/skeleton/styles/all.css";
   import "../app.postcss";
@@ -10,6 +9,7 @@
   import { browser } from "$app/environment";
   import { webVitals } from "$lib/vitals";
   import { page } from "$app/stores";
+
   console.log(import.meta.env.VERCEL_ANALYTICS_ID);
   console.log(dynamicEnv);
   console.log(import.meta.env);
