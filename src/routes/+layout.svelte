@@ -7,6 +7,8 @@
   import Header from "$lib/Header.svelte";
   import { inject } from "@vercel/analytics";
 
+  console.log(import.meta.env.VITE_VERCEL_ANALYTICS_ID);
+
   inject();
 </script>
 
