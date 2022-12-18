@@ -11,17 +11,17 @@
 	import { page } from '$app/stores';
 
 	export let data: PageData;
-	console.log(data);
+	const { analyticsId } = data;
 
 	inject();
 
-	// $: if (browser && analyticsId) {
-	//   webVitals({
-	//     path: $page.url.pathname,
-	//     params: $page.params,
-	//     analyticsId,
-	//   });
-	// }
+	$: if (browser && analyticsId) {
+		webVitals({
+			path: $page.url.pathname,
+			params: $page.params,
+			analyticsId
+		});
+	}
 </script>
 
 <!-- App Shell -->
