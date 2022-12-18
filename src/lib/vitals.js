@@ -1,6 +1,6 @@
 import { getCLS, getFCP, getFID, getLCP, getTTFB } from 'web-vitals';
 
-import { PUBLIC_AXIOM_INGEST_ENDPOINT } from '$env/static/public';
+const vitalsUrl = 'https://vitals.vercel-analytics.com/v1/vitals';
 
 function getConnectionSpeed() {
 	return 'connection' in navigator &&
@@ -39,9 +39,9 @@ function sendToAnalytics(metric, options) {
 		type: 'application/x-www-form-urlencoded'
 	});
 	if (navigator.sendBeacon) {
-		navigator.sendBeacon(PUBLIC_AXIOM_INGEST_ENDPOINT, blob);
+		navigator.sendBeacon(vitalsUrl, blob);
 	} else
-		fetch(PUBLIC_AXIOM_INGEST_ENDPOINT, {
+		fetch(vitalsUrl, {
 			body: blob,
 			method: 'POST',
 			credentials: 'omit',
