@@ -6,16 +6,16 @@
 	import { AppShell } from '@skeletonlabs/skeleton';
 	import Header from '$lib/Header.svelte';
 	import { inject } from '@vercel/analytics';
-	import { browser } from '$app/environment';
+	import { browser, dev } from '$app/environment';
 	import { webVitals } from '$lib/vitals';
 	import { page } from '$app/stores';
 
 	export let data: PageData;
 	const { analyticsId } = data;
 
-	inject();
+	if (!dev) inject();
 
-	$: if (browser && analyticsId) {
+	$: if (browser && analyticsId && !dev) {
 		webVitals({
 			path: $page.url.pathname,
 			params: $page.params,
