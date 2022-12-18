@@ -13,6 +13,7 @@
   console.log(import.meta.env.VERCEL_ANALYTICS_ID);
   console.log(dynamicEnv);
   console.log(import.meta.env);
+  console.log(import.meta.env.VITE_VERCEL_ANALYTICS_ID);
 
   inject();
 
