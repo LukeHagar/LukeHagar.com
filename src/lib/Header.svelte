@@ -4,6 +4,14 @@
 
 <AppBar background="bg-transparent" class="!shadow-none">
   <svelte:fragment slot="trail">
+    <a href="https://www.skeleton.dev">
+      <img
+        alt="Skeleton.dev"
+        class="mx-auto w-8 rounded-xl"
+        src="/favicon.png"
+      />
+      Skeleton
+    </a>
     <a href="https://www.linkedin.com/in/lukehagar/">
       <svg
         class="mx-auto w-8 rounded-xl"
