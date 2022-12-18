@@ -6,8 +6,9 @@
   import { AppShell } from "@skeletonlabs/skeleton";
   import Header from "$lib/Header.svelte";
   import { inject } from "@vercel/analytics";
+
   console.log(import.meta.env.VERCEL_ANALYTICS_ID);
-  console.log(import.meta.env.VITE_VERCEL_ANALYTICS_ID);
+  console.log(import.meta.env);
 
   inject();
 </script>
