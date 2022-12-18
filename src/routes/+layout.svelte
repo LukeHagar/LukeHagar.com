@@ -5,6 +5,9 @@
   import "../app.postcss";
   import { AppShell } from "@skeletonlabs/skeleton";
   import Header from "$lib/Header.svelte";
+  import { inject } from "@vercel/analytics";
+
+  inject();
 </script>
 
 <!-- App Shell -->
