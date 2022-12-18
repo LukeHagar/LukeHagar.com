@@ -1,0 +1,95 @@
+:root {
+	/* =~= Theme Styles =~= */
+	--theme-border-base: 0px;
+	--theme-font-family-heading: system-ui;
+	--theme-font-family-base: system-ui;
+	--theme-font-color-base: var(--color-surface-900);
+	--theme-font-color-dark: var(--color-surface-50);
+	--theme-rounded-base: 9999px;
+	--theme-rounded-container: 24px;
+	/* =~= Theme Colors | Hex =~= */
+	/* primary | #004aeb */
+	--color-primary-50: 245 248 255; /* ⬅ #f5f8ff */
+	--color-primary-100: 229 238 255; /* ⬅ #e5eeff */
+	--color-primary-200: 204 220 255; /* ⬅ #ccdcff */
+	--color-primary-300: 163 192 255; /* ⬅ #a3c0ff */
+	--color-primary-400: 71 130 255; /* ⬅ #4782ff */
+	--color-primary-500: 0 74 235; /* ⬅ #004aeb */
+	--color-primary-600: 0 53 168; /* ⬅ #0035a8 */
+	--color-primary-700: 0 39 122; /* ⬅ #00277a */
+	--color-primary-800: 0 23 71; /* ⬅ #001747 */
+	--color-primary-900: 0 11 36; /* ⬅ #000b24 */
+	/* accent | #c526aa */
+	--color-accent-50: 253 246 252; /* ⬅ #fdf6fc */
+	--color-accent-100: 251 234 248; /* ⬅ #fbeaf8 */
+	--color-accent-200: 247 212 241; /* ⬅ #f7d4f1 */
+	--color-accent-300: 240 178 230; /* ⬅ #f0b2e6 */
+	--color-accent-400: 226 101 205; /* ⬅ #e265cd */
+	--color-accent-500: 197 38 170; /* ⬅ #c526aa */
+	--color-accent-600: 141 27 122; /* ⬅ #8d1b7a */
+	--color-accent-700: 103 20 89; /* ⬅ #671459 */
+	--color-accent-800: 60 11 52; /* ⬅ #3c0b34 */
+	--color-accent-900: 30 6 26; /* ⬅ #1e061a */
+	/* tertiary | #a0eb00 */
+	--color-tertiary-50: 252 255 245; /* ⬅ #fcfff5 */
+	--color-tertiary-100: 247 255 229; /* ⬅ #f7ffe5 */
+	--color-tertiary-200: 239 255 204; /* ⬅ #efffcc */
+	--color-tertiary-300: 226 255 163; /* ⬅ #e2ffa3 */
+	--color-tertiary-400: 197 255 71; /* ⬅ #c5ff47 */
+	--color-tertiary-500: 160 235 0; /* ⬅ #a0eb00 */
+	--color-tertiary-600: 115 168 0; /* ⬅ #73a800 */
+	--color-tertiary-700: 84 122 0; /* ⬅ #547a00 */
+	--color-tertiary-800: 49 71 0; /* ⬅ #314700 */
+	--color-tertiary-900: 24 36 0; /* ⬅ #182400 */
+	/* warning | #d81313 */
+	--color-warning-50: 254 246 246; /* ⬅ #fef6f6 */
+	--color-warning-100: 253 232 232; /* ⬅ #fde8e8 */
+	--color-warning-200: 251 208 208; /* ⬅ #fbd0d0 */
+	--color-warning-300: 248 171 171; /* ⬅ #f8abab */
+	--color-warning-400: 240 86 86; /* ⬅ #f05656 */
+	--color-warning-500: 216 19 19; /* ⬅ #d81313 */
+	--color-warning-600: 155 13 13; /* ⬅ #9b0d0d */
+	--color-warning-700: 113 10 10; /* ⬅ #710a0a */
+	--color-warning-800: 66 6 6; /* ⬅ #420606 */
+	--color-warning-900: 33 3 3; /* ⬅ #210303 */
+	/* surface | #5d768e */
+	--color-surface-50: 249 250 251; /* ⬅ #f9fafb */
+	--color-surface-100: 240 242 245; /* ⬅ #f0f2f5 */
+	--color-surface-200: 224 230 235; /* ⬅ #e0e6eb */
+	--color-surface-300: 199 209 219; /* ⬅ #c7d1db */
+	--color-surface-400: 144 164 182; /* ⬅ #90a4b6 */
+	--color-surface-500: 93 118 142; /* ⬅ #5d768e */
+	--color-surface-600: 66 85 102; /* ⬅ #425566 */
+	--color-surface-700: 48 62 74; /* ⬅ #303e4a */
+	--color-surface-800: 28 36 43; /* ⬅ #1c242b */
+	--color-surface-900: 14 18 22; /* ⬅ #0e1216 */
+}
+
+/* Headings */
+[data-theme='luke'] h1,
+[data-theme='luke'] h2,
+[data-theme='luke'] h3,
+[data-theme='luke'] h4,
+[data-theme='luke'] h5,
+[data-theme='luke'] h6 {
+	font-weight: bold;
+}
+
+/* Applied to body with `<body data-theme="luke">` */
+/* Created with: https://csshero.org/mesher/ */
+[data-theme='luke'] {
+	/* prettier-ignore */
+	background-color:hsla(197,0%,100%,1);
+	background-image: radial-gradient(at 44% 23%, hsla(220, 100%, 31%, 0.36) 0px, transparent 50%),
+		radial-gradient(at 93% 7%, hsla(207, 100%, 40%, 0.58) 0px, transparent 50%),
+		radial-gradient(at 86% 77%, hsla(195, 76%, 61%, 0.55) 0px, transparent 50%),
+		radial-gradient(at 45% 84%, hsla(310, 67%, 47%, 0.48) 0px, transparent 50%);
+}
+.dark [data-theme='luke'] {
+	/* prettier-ignore */
+	/* background-color:hsla(205,19%,68%,0.54); */
+	background-image: radial-gradient(at 44% 23%, hsla(220, 100%, 31%, 0.36) 0px, transparent 50%),
+		radial-gradient(at 93% 7%, hsla(207, 100%, 40%, 0.58) 0px, transparent 50%),
+		radial-gradient(at 86% 77%, hsla(195, 76%, 61%, 0.55) 0px, transparent 50%),
+		radial-gradient(at 45% 84%, hsla(310, 67%, 47%, 0.48) 0px, transparent 50%);
+}
