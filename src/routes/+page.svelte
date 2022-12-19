@@ -18,15 +18,28 @@
 
 	const particlesConfig = {
 		particles: {
+			// angle: {
+			// 	value: 0,
+			// 	offset: 30
+			// },
 			color: {
-				value: '#ffff'
+				value: ['#ffffff', '#0033a1', '#0071ce', '#54c0e8', '#cc27b0']
 			},
 			links: {
 				enable: true,
-				color: '#ffff'
+				color: '#54c0e8'
 			},
 			move: {
 				enable: true
+
+				// gravity: {
+				// 	enable: true
+				// }
+				// speed: { min: 5, max: 20 },
+				// decay: 0.01
+			},
+			number: {
+				value: 500
 			}
 		}
 	};
