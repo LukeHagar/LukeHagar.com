@@ -64,8 +64,8 @@
 					class="text-6xl"
 					tag="h1"
 					direction="bg-gradient-to-r"
-					from="from-primary-500"
-					to="to-surface-500">Luke</GradientHeading
+					from="from-primary-400"
+					to="to-surface-400">Luke</GradientHeading
 				>
 			</div>
 		</span>
