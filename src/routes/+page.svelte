@@ -1,7 +1,20 @@
 <script>
+	import AnimatedCounter from '$lib/AnimatedCounter.svelte';
 	import { Avatar, GradientHeading } from '@skeletonlabs/skeleton';
 	import Particles from 'svelte-particles';
 	import { loadFull } from 'tsparticles';
+
+	const counterList = [
+		'a FullStack Developer',
+		'a Frontend Nerd',
+		'a Backend Geek',
+		'an IAM Engineer',
+		'a Cloud Support Engineer',
+		'an Open Source Contributor',
+		'a Skeleton Contributor',
+		'a Svelte Enthusiast',
+		'a Developer Advocate'
+	];
 
 	const particlesConfig = {
 		particles: {
@@ -60,5 +73,25 @@
 		<div class="flex justify-center space-x-2" />
 		<div class="space-y-2" />
 		<Avatar src="/Luke.png" width="w-48" class="mx-auto" />
+
+		<div class="flex flex-row justify-center">
+			<div class="skills">
+				I'm [<AnimatedCounter values={counterList} random class="custom-skill" />]
+			</div>
+		</div>
 	</div>
 </div>
+
+<style>
+	.skills {
+		display: flex;
+		justify-items: start;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	:global(.custom-skill) {
+		display: inline-block;
+		text-align: center;
+		@apply px-2;
+	}
+</style>
