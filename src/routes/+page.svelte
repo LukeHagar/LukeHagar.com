@@ -76,7 +76,13 @@
 
 		<div class="flex flex-row justify-center">
 			<div class="skills">
-				I'm [<AnimatedCounter values={counterList} random class="custom-skill" />]
+				I'm [<AnimatedCounter
+					interval={1200}
+					transitionInterval={700}
+					values={counterList}
+					random
+					class="custom-skill"
+				/>]
 			</div>
 		</div>
 	</div>
