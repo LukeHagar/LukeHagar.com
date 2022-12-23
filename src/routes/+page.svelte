@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import AnimatedCounter from '$lib/AnimatedCounter.svelte';
 	import { Avatar, GradientHeading } from '@skeletonlabs/skeleton';
 	import Particles from 'svelte-particles';
@@ -39,19 +39,19 @@
 				// decay: 0.01
 			},
 			number: {
-				value: 500
+				value: 200
 			}
 		}
 	};
 
-	const onParticlesLoaded = (event) => {
+	const onParticlesLoaded = (event: any) => {
 		const particlesContainer = event.detail.particles;
 
 		// you can use particlesContainer to call all the Container class
 		// (from the core library) methods like play, pause, refresh, start, stop
 	};
 
-	const particlesInit = async (engine) => {
+	const particlesInit = async (engine: any) => {
 		// you can use main to customize the tsParticles instance adding presets or custom shapes
 		// this loads the tsparticles package bundle, it's the easiest method for getting everything ready
 		// starting from v2 you can add only the features you need reducing the bundle size
@@ -94,7 +94,7 @@
 					transitionInterval={700}
 					values={counterList}
 					random
-					class="custom-skill"
+					class="custom-skill px-2"
 				/>]
 			</div>
 		</div>
@@ -111,6 +111,5 @@
 	:global(.custom-skill) {
 		display: inline-block;
 		text-align: center;
-		@apply px-2;
 	}
 </style>
