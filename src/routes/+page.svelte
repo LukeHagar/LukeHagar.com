@@ -70,17 +70,8 @@
 <div class="z-50 mx-auto flex h-full items-center justify-center md:p-0 p-4">
 	<div class="card card-glass z-50 space-y-5 p-4 md:p-10">
 		<span class="flex flex-row flex-wrap gap-2">
-			<p class="unstyled text-6xl font-bold !text-white">Hi,</p>
-			<div class="flex flex-row gap-2">
-				<p class="unstyled text-6xl font-bold !text-white">I'm</p>
-				<GradientHeading
-					class="text-6xl"
-					tag="h1"
-					direction="bg-gradient-to-r"
-					from="from-primary-400"
-					to="to-surface-400">Luke</GradientHeading
-				>
-			</div>
+			<p class="unstyled text-6xl !text-white">Hi,</p>
+			<p class="unstyled text-6xl !text-white">I'm Luke</p>
 		</span>
 
 		<div class="flex justify-center space-x-2" />
@@ -94,7 +85,7 @@
 					transitionInterval={700}
 					values={counterList}
 					random
-					class="custom-skill px-2"
+					class="custom-skill px-2 text-secondary-500"
 				/>]
 			</div>
 		</div>
@@ -108,6 +99,7 @@
 		align-items: center;
 		flex-wrap: wrap;
 	}
+
 	:global(.custom-skill) {
 		display: inline-block;
 		text-align: center;
