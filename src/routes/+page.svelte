@@ -1,6 +1,6 @@
 <script lang="ts">
 	import AnimatedCounter from '$lib/AnimatedCounter.svelte';
-	import { Avatar, GradientHeading } from '@skeletonlabs/skeleton';
+	import { Avatar } from '@skeletonlabs/skeleton';
 	import Particles from 'svelte-particles';
 	import { loadFull } from 'tsparticles';
 
