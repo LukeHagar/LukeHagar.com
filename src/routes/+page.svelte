@@ -59,6 +59,19 @@
 	};
 </script>
 
+<svelte:head>
+	<title>LukeHagar.com</title>
+	<!-- Meta -->
+	<meta name="title" content="LukeHagar.com" />
+	<meta name="description" content="Nothing special, just something for me to link to :)" />
+	<!-- Open Graph -->
+	<meta property="og:title" content="LukeHagar.com" />
+	<meta property="og:description" content="Nothing special, just something for me to link to :)" />
+	<meta property="og:type" content="image/jpeg" />
+	<meta property="og:url" content="https://lukehagar.com" />
+	<meta property="og:image" content="/Luke.png" />
+</svelte:head>
+
 <div class="z-0">
 	<Particles
 		id="tsparticles"
