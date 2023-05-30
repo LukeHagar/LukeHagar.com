@@ -13,7 +13,7 @@
 		'a Senior Software Engineer',
 		'a Frontend Nerd',
 		'a Backend Geek',
-		'an Identity and Access Mangement Engineer',
+		'an IAM Engineer',
 		'a Cloud Support Engineer',
 		'an Open Source Contributor',
 		'a Skeleton Contributor',
@@ -61,7 +61,7 @@
 	<Particles id="tsparticles" options={particlesConfig} {particlesInit} />
 </div>
 <div class="z-50 mx-auto flex h-full flex-col gap-2 items-center justify-center p-4">
-	<div class="w-[500px] card variant-glass-surface z-50 space-y-5 p-4">
+	<div class="min-w-[380px] max-w-[500px] w-full card variant-glass-surface z-50 space-y-5 p-4">
 		<span class="flex flex-row justify-center flex-wrap gap-2 text-3xl">
 			<p>Hi, I'm Luke</p>
 		</span>
@@ -82,7 +82,9 @@
 			</div>
 		</div>
 	</div>
-	<div class="w-[500px] flex flex-row justify-between card variant-glass-surface p-4">
+	<div
+		class="min-w-[380px] max-w-[500px] w-full flex flex-row flex-wrap justify-between card variant-glass-surface p-4"
+	>
 		<a
 			class="unstyled grow text-center transition ease-in-out hover:scale-125 duration-200 subpixel-antialiased scale-110"
 			target="_blank"
