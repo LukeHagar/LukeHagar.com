@@ -10,14 +10,7 @@ const config = {
 		preprocess({
 			postcss: true
 		})
-	],
-	vitePlugin: {
-		experimental: {
-			inspector: {
-				holdMode: true
-			}
-		}
-	}
+	]
 };
 
 export default config;
