@@ -1,27 +1,14 @@
 <script lang="ts">
-	import type { PageData } from './$types';
+	import Header from '$lib/Header.svelte';
 	import '$lib/theme-luke.css';
+	import { AppShell } from '@skeletonlabs/skeleton';
 	import '@skeletonlabs/skeleton/styles/all.css';
 	import '../app.postcss';
-	import { AppShell } from '@skeletonlabs/skeleton';
-	import Header from '$lib/Header.svelte';
+
+	import { dev } from '$app/environment';
 	import { inject } from '@vercel/analytics';
-	import { browser, dev } from '$app/environment';
-	import { webVitals } from '$lib/vitals';
-	import { page } from '$app/stores';
 
-	export let data: PageData;
-	const { analyticsId } = data;
-
-	if (!dev) inject();
-
-	$: if (browser && analyticsId && !dev) {
-		webVitals({
-			path: $page.url.pathname,
-			params: $page.params,
-			analyticsId
-		});
-	}
+	inject({ mode: dev ? 'development' : 'production' });
 </script>
 
 <!-- App Shell -->
