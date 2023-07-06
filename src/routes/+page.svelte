@@ -4,8 +4,6 @@
 	import GitHubSvg from '$lib/GitHubSVG.svelte';
 	import LinkedInSvg from '$lib/LinkedInSVG.svelte';
 	import { Avatar } from '@skeletonlabs/skeleton';
-	import Particles from 'svelte-particles';
-	import { loadFull } from 'tsparticles';
 
 	const counterList = [
 		's Space Cowboy',
@@ -20,28 +18,6 @@
 		'a Svelte Enthusiast',
 		'a Developer Advocate'
 	];
-
-	const particlesConfig = {
-		particles: {
-			color: {
-				value: ['#ffffff', '#0033a1', '#0071ce', '#54c0e8', '#cc27b0']
-			},
-			links: {
-				enable: true,
-				color: '#54c0e8'
-			},
-			move: {
-				enable: true
-			},
-			number: {
-				value: 200
-			}
-		}
-	};
-
-	const particlesInit = async (engine: any) => {
-		await loadFull(engine);
-	};
 </script>
 
 <svelte:head>
@@ -57,27 +33,28 @@
 	<meta property="og:image" content="/Luke.png" />
 </svelte:head>
 
-<div class="z-0">
-	<Particles id="tsparticles" options={particlesConfig} {particlesInit} />
-</div>
-<div class="z-50 mx-auto flex h-full flex-col gap-2 items-center justify-center p-4">
+<div
+	class="mx-auto flex h-full flex-col gap-2 items-center justify-center p-4"
+	data-atropos-offset="+20"
+>
 	<div class="min-w-[380px] max-w-[500px] w-full card variant-glass-surface z-50 space-y-5 p-4">
 		<span class="flex flex-row justify-center flex-wrap gap-2 text-3xl">
 			<p>Hi, I'm Luke</p>
 		</span>
 
 		<div class="flex justify-center space-x-2" />
-		<div class="space-y-2" />
-		<Avatar src="/Luke.png" width="w-48" class="mx-auto" />
+		<div class="space-y-2">
+			<Avatar src="/Luke.png" width="w-48" class="mx-auto" />
+		</div>
 
 		<div class="flex flex-row justify-center">
-			<div class="skills">
+			<div class="skills text-2xl">
 				I'm [<AnimatedCounter
 					interval={1200}
 					transitionInterval={700}
 					values={counterList}
 					random
-					class="custom-skill px-2 "
+					class="custom-skill px-2 text-2xl"
 				/>]
 			</div>
 		</div>
