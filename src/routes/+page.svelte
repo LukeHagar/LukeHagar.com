@@ -6,7 +6,7 @@
 	import { Avatar } from '@skeletonlabs/skeleton';
 
 	const counterList = [
-		's Space Cowboy',
+		'a Space Cowboy',
 		'a FullStack Developer',
 		'a Senior Software Engineer',
 		'a Frontend Nerd',
@@ -49,13 +49,13 @@
 
 		<div class="flex flex-row justify-center">
 			<div class="skills text-2xl">
-				I'm [<AnimatedCounter
+				I'm <AnimatedCounter
 					interval={1200}
 					transitionInterval={700}
 					values={counterList}
 					random
 					class="custom-skill px-2 text-2xl"
-				/>]
+				/>
 			</div>
 		</div>
 	</div>
