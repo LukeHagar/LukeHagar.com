@@ -37,8 +37,7 @@
 		"tslib": "^2.5.2",
 		"tsparticles": "^2.9.3",
 		"typescript": "^5.0.4",
-		"vite": "^4.3.9",
-		"web-vitals": "^3.3.2"
+		"vite": "^4.3.9"
 	},
 	"type": "module"
 }
