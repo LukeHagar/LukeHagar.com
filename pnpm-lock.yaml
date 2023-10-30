@@ -79,9 +79,6 @@ devDependencies:
   vite:
     specifier: ^4.3.9
     version: 4.3.9
-  web-vitals:
-    specifier: ^3.3.2
-    version: 3.3.2
 
 packages:
 
@@ -2780,10 +2777,6 @@ packages:
         optional: true
     dependencies:
       vite: 4.3.9
-    dev: true
-
-  /web-vitals@3.3.2:
-    resolution: {integrity: sha512-qRkpmSeKfEWAzNhtX541xA8gCJ+pqCqBmUlDVkVDSCSYUvfvNqF+k9g8I+uyreRcDBdfiJrd0/aLbTy5ydo49Q==}
     dev: true
 
   /webidl-conversions@3.0.1:
