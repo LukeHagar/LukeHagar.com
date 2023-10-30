@@ -3,16 +3,28 @@
 	import '@skeletonlabs/skeleton/styles/skeleton.css';
 	import '../app.postcss';
 	// Import the Analytics package, and the SvelteKit dev variable.
-	import { dev } from '$app/environment';
+	import { browser, dev } from '$app/environment';
 	import { inject } from '@vercel/analytics';
 	import Particles from 'svelte-particles';
 	import { loadFull } from 'tsparticles';
 
+	import { webVitals } from '$lib/vitals';
 	import Atropos from 'atropos';
 	import 'atropos/css';
 	import { onMount } from 'svelte';
+	import { page } from '$app/stores';
 
 	let div: HTMLDivElement;
+
+	let analyticsId = import.meta.env.VERCEL_ANALYTICS_ID;
+
+	$: if (browser && analyticsId) {
+		webVitals({
+			path: $page.url.pathname,
+			params: $page.params,
+			analyticsId
+		});
+	}
 
 	onMount(() => {
 		// Initialize
