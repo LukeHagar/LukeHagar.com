@@ -41,7 +41,7 @@
 		"tsparticles": "^2.9.3",
 		"typescript": "^5.0.4",
 		"vite": "^4.3.9",
-		"@sentry/sveltekit": "^7.84.0"
+		"@sentry/sveltekit": "7.76.0"
 	},
 	"optionalDependencies": {"@sentry/cli": "2.22.2"},
 	"type": "module"
