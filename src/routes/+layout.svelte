@@ -2,7 +2,7 @@
 	import '$lib/theme-luke.css';
 	import '../app.postcss';
 
-	import Particles from 'svelte-particles';
+	import Particles, { particlesInit } from '@tsparticles/svelte';
 	import { loadFull } from 'tsparticles';
 
 	const particlesConfig = {
@@ -23,11 +23,16 @@
 		}
 	};
 
-	const particlesInit = async (engine: any) => {
+	void particlesInit(async (engine) => {
+		// call this once per app
+		// you can use main to customize the tsParticles instance adding presets or custom shapes
+		// this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+		// starting from v2 you can add only the features you need reducing the bundle size
 		await loadFull(engine);
-	};
+		// await loadSlim(engine);
+	});
 </script>
 
-<Particles id="tsparticles" options={particlesConfig} {particlesInit} />
+<Particles id="tsparticles" options={particlesConfig} />
 <!-- Page Route Content -->
 <slot />
