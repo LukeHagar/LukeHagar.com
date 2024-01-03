@@ -2,8 +2,18 @@
 	import '$lib/theme-luke.css';
 	import '../app.postcss';
 
-	import Particles, { particlesInit } from '@tsparticles/svelte';
+	import { onMount } from 'svelte';
+
+	import { particlesInit } from '@tsparticles/svelte';
 	import { loadFull } from 'tsparticles';
+
+	let ParticlesComponent;
+
+	onMount(async () => {
+		const module = await import('@tsparticles/svelte');
+
+		ParticlesComponent = module.default;
+	});
 
 	const particlesConfig = {
 		particles: {
@@ -33,6 +43,6 @@
 	});
 </script>
 
-<Particles id="tsparticles" options={particlesConfig} />
+<svelte:component this={ParticlesComponent} id="tsparticles" options={particlesConfig} />
 <!-- Page Route Content -->
 <slot />
