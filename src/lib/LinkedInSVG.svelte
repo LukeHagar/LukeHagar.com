@@ -1,5 +1,5 @@
 <svg
-	class="mx-auto w-8 rounded-xl"
+	class="mx-auto w-8 rounded-sm"
 	fill="white"
 	version="1.1"
 	id="Layer_1"
