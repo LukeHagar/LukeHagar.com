@@ -8,7 +8,8 @@ const config = {
 			sourceMapsUploadOptions: {
 				org: 'sentry',
 				project: 'lukehagar',
-				url: 'https://sentry.plygrnd.org'
+				url: 'https://sentry.plygrnd.org',
+				authToken: process.env.SENTRY_AUTH_TOKEN
 			}
 		}),
 		sveltekit()
