@@ -1,5 +1,6 @@
 // This file is used to initialize Sentry on the client side.
 import { dev } from '$app/environment';
+import { handleErrorWithSentry, replayIntegration } from '@sentry/sveltekit';
 import * as Sentry from '@sentry/sveltekit';
 
 Sentry.init({
@@ -18,8 +19,8 @@ Sentry.init({
 	replaysOnErrorSampleRate: 1.0,
 
 	// If you don't want to use Session Replay, just remove the line below:
-	integrations: [new Sentry.Replay()]
+	integrations: [replayIntegration()]
 });
 
 // If you have a custom error handler, pass it to `handleErrorWithSentry`
-export const handleError = Sentry.handleErrorWithSentry();
+export const handleError = handleErrorWithSentry();
