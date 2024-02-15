@@ -1214,13 +1214,14 @@ acorn@^8.10.0, acorn@^8.8.1, acorn@^8.9.0:
   integrity sha512-Y9rRfJG5jcKOE0CLisYbojUjIrIEE7AGMzA/Sm4BslANhbS+cDMpgBdcPT91oJ7OuJ9hYJBx59RjbhxVnrF8Xg==
 
 adapter-open-runtime@^0.1.0:
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/adapter-open-runtime/-/adapter-open-runtime-0.1.6.tgz#1156c7d688dcf174e594fa6127e9b23f039c055f"
-  integrity sha512-Obec9gwUs6OOIESCk7fuQOgZr39pXYa3JED6+wsF54RrtkKPR/rWycYxgJaf1gD6D7YuLcormiP6Cdq97KOVQw==
+  version "0.1.14"
+  resolved "https://registry.yarnpkg.com/adapter-open-runtime/-/adapter-open-runtime-0.1.14.tgz#c695b6cc74badfc17b15ef9c8d8401886bae7b59"
+  integrity sha512-MuBQ90vnkJQbHGQ+rPp9gRYv7q3Z+ZfHy1ZXoiKEgtqjyoU7Cuoq4QPveKg5UceXUFF7qCCJ9ub7Gq5XwMF1CQ==
   dependencies:
     "@rollup/plugin-commonjs" "^25.0.7"
     "@rollup/plugin-json" "^6.1.0"
     "@rollup/plugin-node-resolve" "^15.2.3"
+    glob "^10.3.10"
     mime-types "^2.1.35"
     rollup "^4.11.0"
 
@@ -2913,7 +2914,6 @@ source-map@~0.6.1:
   integrity sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
 
 "string-width-cjs@npm:string-width@^4.2.0", string-width@^4.1.0:
-  name string-width-cjs
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
   integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
