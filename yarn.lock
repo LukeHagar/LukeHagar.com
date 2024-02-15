@@ -1214,9 +1214,9 @@ acorn@^8.10.0, acorn@^8.8.1, acorn@^8.9.0:
   integrity sha512-Y9rRfJG5jcKOE0CLisYbojUjIrIEE7AGMzA/Sm4BslANhbS+cDMpgBdcPT91oJ7OuJ9hYJBx59RjbhxVnrF8Xg==
 
 adapter-open-runtime@^0.1.0:
-  version "0.1.19"
-  resolved "https://registry.yarnpkg.com/adapter-open-runtime/-/adapter-open-runtime-0.1.19.tgz#cd64a7803b01a9a60349a2aa53a94eb5889c2458"
-  integrity sha512-3p1UPn4Nw19xPJeP81a/r/TQSkIP012CjmsRmTAKtDzOuGpVCfOSKViF0N6QV1nqRsZjjE71Eejvb6fmQjpouA==
+  version "0.1.20"
+  resolved "https://registry.yarnpkg.com/adapter-open-runtime/-/adapter-open-runtime-0.1.20.tgz#29f1fa0bcfc57376d6f36400ae34056a56662a5c"
+  integrity sha512-IAPz7nYvhJGl3HfUpujXD3//YGqP9FeU9FbuAbCK5vWLZ41YSRXJKK764sl8/x5rqBg9hMdxGmm45eWM8fcHEQ==
   dependencies:
     "@rollup/plugin-commonjs" "^25.0.7"
     "@rollup/plugin-json" "^6.1.0"
