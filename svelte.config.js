@@ -1,4 +1,4 @@
-import adapter from 'adapter-open-runtime';
+import adapter from 'adapter-appwrite';
 import preprocess from 'svelte-preprocess';
 
 /** @type {import('@sveltejs/kit').Config} */
