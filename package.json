@@ -12,7 +12,6 @@
 		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
-		"@sentry/sveltekit": "^7.91.0",
 		"@skeletonlabs/skeleton": "^2.7.0",
 		"@skeletonlabs/tw-plugin": "^0.3.1",
 		"@sveltejs/adapter-auto": "^3.0.0",
