@@ -103,7 +103,7 @@
 		</a>
 
 		<a
-			class="unstyled grow text-center transition ease-in-out hover:scale-125 duration-200 subpixel-antialiased scale-110"
+			class="unstyled grow text-center scale-110 disabled opacity-50"
 			target="_blank"
 			rel="noreferrer"
 			href="https://github.com/luke-hagar-sp"
@@ -125,5 +125,10 @@
 	:global(.custom-skill) {
 		display: inline-block;
 		text-align: center;
+	}
+
+	a.disabled {
+		pointer-events: none;
+		cursor: default;
 	}
 </style>
