@@ -1,6 +1,6 @@
 <script lang="ts">
 	import '$lib/theme-luke.css';
-	import '../app.postcss';
+	import '../app.css';
 
 	import { onMount } from 'svelte';
 
@@ -48,6 +48,8 @@
 	});
 </script>
 
-<ParticlesComponent id="tsparticles" options={particlesConfig} />
+{#if ParticlesComponent}
+	<ParticlesComponent id="tsparticles" options={particlesConfig} />
+{/if}
 <!-- Page Route Content -->
 {@render children?.()}

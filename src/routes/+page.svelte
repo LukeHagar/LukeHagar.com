@@ -24,13 +24,13 @@
 	<title>LukeHagar.com</title>
 	<!-- Meta -->
 	<meta name="title" content="LukeHagar.com" />
-	<meta name="description" content="Nothing special, just something for me to link to :)" />
+	<meta name="description" content="a simple personal portfolio" />
 	<!-- Open Graph -->
 	<meta property="og:title" content="LukeHagar.com" />
-	<meta property="og:description" content="Nothing special, just something for me to link to :)" />
-	<meta property="og:type" content="image/jpeg" />
+	<meta property="og:description" content="a simple personal portfolio" />
 	<meta property="og:url" content="https://lukehagar.com" />
 	<meta property="og:image" content="/Luke.png" />
+	<meta property="og:type" content="image/png" />
 </svelte:head>
 
 <div
