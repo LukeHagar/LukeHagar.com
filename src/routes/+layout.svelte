@@ -6,8 +6,13 @@
 
 	import { particlesInit } from '@tsparticles/svelte';
 	import { loadFull } from 'tsparticles';
+	interface Props {
+		children?: import('svelte').Snippet;
+	}
 
-	let ParticlesComponent;
+	let { children }: Props = $props();
+
+	let ParticlesComponent = $state();
 
 	onMount(async () => {
 		const module = await import('@tsparticles/svelte');
@@ -43,6 +48,6 @@
 	});
 </script>
 
-<svelte:component this={ParticlesComponent} id="tsparticles" options={particlesConfig} />
+<ParticlesComponent id="tsparticles" options={particlesConfig} />
 <!-- Page Route Content -->
-<slot />
+{@render children?.()}

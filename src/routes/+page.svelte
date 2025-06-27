@@ -42,7 +42,7 @@
 			<p>Hi, I'm Luke</p>
 		</span>
 
-		<div class="flex justify-center space-x-2" />
+		<div class="flex justify-center space-x-2"></div>
 		<div class="space-y-2">
 			<Avatar src="/Luke.png" width="w-48" class="mx-auto" />
 		</div>
